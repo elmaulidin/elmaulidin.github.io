@@ -1,23 +1,29 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(#1a1a1a, #000000);
-  color: #eee;
-  overflow-x: hidden;
+  background: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 header {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(to right, #0ff, #00f);
+  padding: 60px 20px;
+  background: linear-gradient(to right, #00f0ff, #0040ff);
   color: black;
-  box-shadow: 0 0 30px #00f;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #00f0ff;
 }
 
 header h1 {
   font-size: 3rem;
   margin: 0;
-  text-shadow: 0 0 10px #0ff;
+  text-shadow: 0 0 10px #00f0ff;
 }
 
 header p {
@@ -26,40 +32,35 @@ header p {
   font-weight: bold;
 }
 
-.projects {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.projects h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
 }
 
 .card {
   background: #111;
   border: 1px solid #333;
-  box-shadow: 0 0 15px #0ff80;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 20px #00f0ff80;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #0ff;
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #00f0ff;
+}
+
+.card h2 {
+  color: #00f0ff;
+  margin-bottom: 10px;
 }
 
 footer {
   text-align: center;
   padding: 30px 20px;
-  color: #ccc;
-  background: #050505;
   font-size: 0.9rem;
+  color: #aaa;
 }
-
