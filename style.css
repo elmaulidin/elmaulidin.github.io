@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #0b0e1c;
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #7ed6df;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.navbar nav a {
+  color: #ccd6f6;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #7ed6df;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.hero-text {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  color: #7ed6df;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+.hero-text p {
+  color: #b0bec5;
+}
+
+.hero-cube {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.hero-cube img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.about-item {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about-item img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.about-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-item p {
+  color: #b0bec5;
+  font-size: 0.95rem;
+}
+
+.projects {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.project-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #b0bec5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-text, .hero-cube, .about-item {
+    flex: 1 1 100%;
+  }
+}
